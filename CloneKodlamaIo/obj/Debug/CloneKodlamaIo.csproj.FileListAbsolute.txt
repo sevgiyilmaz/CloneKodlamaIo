@@ -1,0 +1,7 @@
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\bin\Debug\CloneKodlamaIo.exe.config
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\bin\Debug\CloneKodlamaIo.exe
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\bin\Debug\CloneKodlamaIo.pdb
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\obj\Debug\CloneKodlamaIo.csproj.AssemblyReference.cache
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\obj\Debug\CloneKodlamaIo.csproj.CoreCompileInputs.cache
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\obj\Debug\CloneKodlamaIo.exe
+C:\Users\sevgi\source\repos\CloneKodlamaIo\CloneKodlamaIo\obj\Debug\CloneKodlamaIo.pdb
