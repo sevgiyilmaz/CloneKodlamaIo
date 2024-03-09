@@ -14,13 +14,11 @@ namespace CloneKodlamaIo.DataAccess.Concretes
         public CourseDal()
         {
             _courses = new List<Course>()
-        {
-            new Course() {CourseId=1, CourseName="2024 Yazılım Geliştirici Yetiştirme Kampı (C#)", CourseDescription="Kursumuz her pazartesi saat 20:00 da başlayacaktır.", InstructorId=1, CategoryId=1 },
-            new Course() {CourseId=2, CourseName="Yazılım Geliştirici Yetiştirme Kampı (JavaScript)", CourseDescription="Kursumuz her salı saat 20:00 da başlayacaktır.", InstructorId=1, CategoryId=1 },
-            new Course() {CourseId=3, CourseName="(2023) Yazılım Geliştirici Yetiştirme Kampı - Python & Selenium", CourseDescription="Kursumuz her çarşamba saat 20:00 da başlayacaktır.", InstructorId=2, CategoryId=1 },
-           new Course() {CourseId=4, CourseName="Yazılım Geliştirici Yetiştirme Kampı (C# + ANGULAR)", CourseDescription="Kursumuz her perşembe saat 20:00 da başlayacaktır.", InstructorId=1, CategoryId=1 },
-            new Course() {CourseId=5, CourseName="Programlamaya Giriş için Temel Kurs", CourseDescription="Kursumuz her cuma saat 20:00 da başlayacaktır.", InstructorId=1, CategoryId=1 }
-        };
+            {
+            new Course() {CourseId=1, CourseName="2024 Yazılım Geliştirici Yetiştirme Kampı (C#)", CourseDescription="2024 C# Yazılım Geliştirici Kampını takip etmeyi unutmayın...", InstructorId=1, CategoryId=1 },
+            new Course() {CourseId=2, CourseName="2022 JAVA Yazılım Geliştirici Kampı", CourseDescription="2022 JAVA Yazılım Geliştirici Kampını takip etmeyi unutmayın...", InstructorId=1, CategoryId=1 },
+            new Course() {CourseId=3, CourseName="(2023) Yazılım Geliştirici Yetiştirme Kampı - Python & Selenium", CourseDescription="Pyton&Selenyum Yazılım Geliştirici Yetiştirme Kampını takip etmeyi unutmayın...", InstructorId=2, CategoryId=1 }
+            };
         }
 
         public void CourseAdd(Course item)
@@ -43,13 +41,17 @@ namespace CloneKodlamaIo.DataAccess.Concretes
                 courseId.InstructorId = item.InstructorId;
                 courseId.CategoryId = item.CategoryId;
             }
+            else
+            {
+                Console.WriteLine("Girdiğiniz id numaralı kurs mevcut olmadığı için güncelleme işlemi gerçekleştirilemedi!");
+            }
         }
 
         public List<Course> GetAllCourse()
         {
             foreach (var course in _courses)
             {
-                Console.WriteLine("Kurs bilgileri: {0} / {1} / {2} / {3}", course.CourseName, course.CourseDescription, course.InstructorId, course.CategoryId);
+                Console.WriteLine($"Kurs adı: {course.CourseName}, Açıklama: {course.CourseDescription} Eğitmen: {course.InstructorId} Kategori: {course.CategoryId}");
             }
             return _courses;
         }

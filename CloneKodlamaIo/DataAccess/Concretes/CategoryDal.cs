@@ -15,7 +15,7 @@ namespace CloneKodlamaIo.DataAccess.Concretes
         {
             _categories = new List<Category>
        {
-           new Category{CategoryID=1, CategoryName="Kodlama" }
+           new Category{CategoryID=1, CategoryName="Programlama" }
         };
 
         }
@@ -35,6 +35,10 @@ namespace CloneKodlamaIo.DataAccess.Concretes
             if (categoryId != null)
             {
                 categoryId.CategoryName = item.CategoryName;
+            }
+            else
+            {
+                Console.WriteLine("Girdiğiniz id numaralı kategori mevcut olmadığı için güncelleme işlemi gerçekleştirilemedi!");
             }
         }
 

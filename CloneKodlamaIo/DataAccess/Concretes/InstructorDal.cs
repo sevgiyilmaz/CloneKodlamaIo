@@ -45,6 +45,10 @@ namespace CloneKodlamaIo.DataAccess.Concretes
             {
                 instructorId.InstructorFullname = item.InstructorFullname;
             }
+            else
+            {
+                Console.WriteLine("Girdiğiniz id numaralı eğitmen mevcut olmadığı için güncelleme işlemi gerçekleştirilemedi!");
+            }
         }
     }
 }
