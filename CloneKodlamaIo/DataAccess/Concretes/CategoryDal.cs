@@ -19,7 +19,6 @@ namespace CloneKodlamaIo.DataAccess.Concretes
         };
 
         }
-
         public void CategoryAdd(Category item)
         {
             _categories.Add(item);
