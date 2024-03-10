@@ -28,7 +28,11 @@ namespace CloneKodlamaIo.DataAccess.Concretes
 
         public void CourseDelete(Course item)
         {
-            _courses.Remove(item);
+            var courseId = _courses.FirstOrDefault(x => x.CourseId == item.CourseId);
+            if (courseId != null)
+            {
+                _courses.Remove(courseId);
+            }
         }
 
         public void CourseUpdate(Course item)

@@ -35,7 +35,12 @@ namespace CloneKodlamaIo.DataAccess.Concretes
 
         public void InstructorDelete(Instructor item)
         {
-            _instructors.Remove(item);
+            var instructorId = _instructors.FirstOrDefault(x => x.InstructorId == item.InstructorId);
+            if (instructorId != null) 
+            {
+                _instructors.Remove(instructorId);
+            }
+                
         }
 
         public void InstructorUpdate(Instructor item)

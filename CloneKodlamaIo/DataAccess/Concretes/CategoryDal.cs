@@ -26,7 +26,12 @@ namespace CloneKodlamaIo.DataAccess.Concretes
 
         public void CategoryDelete(Category item)
         {
-            _categories.Remove(item);
+            var categoryId = _categories.FirstOrDefault(x => x.CategoryID == item.CategoryID);
+            if (categoryId != null) 
+            {
+                _categories.Remove(categoryId); 
+            }
+                
         }
 
         public void CategoryUpdate(Category item)
