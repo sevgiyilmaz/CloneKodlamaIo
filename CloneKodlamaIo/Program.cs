@@ -28,6 +28,14 @@ namespace CloneKodlamaIo
             courseManager.CourseAdd(course);
             courseManager.GetAllCourse();
 
+            Console.WriteLine("------------------------------------------------------------------------");
+
+            Instructor Instructor = new Instructor { InstructorId = 3, InstructorFullname = "Sevgi Yılmaz" };
+            InstructorManager ınstructorManager = new InstructorManager(new InstructorDal());
+            ınstructorManager.InstructorAdd(Instructor);
+            Console.WriteLine("Yeni eğitmen eklendi.");
+            ınstructorManager.GetAllInstructor();
+
 
             Console.ReadLine();
         }
